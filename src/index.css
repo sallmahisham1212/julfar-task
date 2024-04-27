@@ -1,3 +1,7 @@
+@import "https://js.arcgis.com/4.29/@arcgis/core/assets/esri/themes/dark/main.css";
+@import "@esri/calcite-components/dist/calcite/calcite.css";
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,36 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.esri-view-height-medium .esri-ui-corner .esri-component.esri-widget--panel-height-only {
+  max-width: 250px !important;
+  max-height: 258px !important;
+}
+
+.esri-ui-corner .esri-widget.esri-basemap-toggle {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5),
+    0 6px 20px 0 rgba(0, 0, 0, 0.5) !important;
+  background-color: #0000;
+}
+
+.button-draw {
+  width: 40px;
+  height: 40px;
+  background-color: var(--calcite-color-foreground-3);
+  color: var(--calcite-color-text-2) !important;
+  border: 0;
+  cursor: pointer;
+}
+
+#tableDiv{
+  height: 35%;
+  bottom: 0;
 }

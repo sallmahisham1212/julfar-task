@@ -1,0 +1,44 @@
+<form id="idForm">
+
+    <calcite-label> Name:<calcite-input form="idForm" placeholder="Name" id="nameId"
+            validation-message="name is a required field." status="idle" required>
+        </calcite-input>
+    </calcite-label>
+
+    <calcite-label> Email:<calcite-input form="idForm" type="email" id="emailId" placeholder="Email" status="idle"
+            validation-message="email is a required field." required></calcite-input>
+    </calcite-label>
+
+        <calcite-radio-button-group form="idForm" name="radiooptions" scale="s" layout="vertical" validation-message="type of feedback is a required field." status="idle" required>
+            <calcite-label> Types of feedback:</calcite-label>
+            <calcite-label layout="inline">
+                <calcite-radio-button  value="complain"></calcite-radio-button>
+                Complain
+            </calcite-label >
+            <calcite-label layout="inline">
+                <calcite-radio-button  value="requestInformation"></calcite-radio-button>
+                Request Information
+            </calcite-label>
+            <calcite-label layout="inline">
+                <calcite-radio-button  value="missedServices"></calcite-radio-button>
+                Missed Services
+            </calcite-label>
+            <calcite-label layout="inline">
+                <calcite-radio-button  value="addinformation"></calcite-radio-button>
+                Add information
+            </calcite-label>
+            <calcite-label layout="inline">
+                <calcite-radio-button  value="others"></calcite-radio-button>
+                Others
+            </calcite-label>
+        </calcite-radio-button-group>
+
+
+    <calcite-label> Message:<calcite-input required status="idle" form="idForm" id="msgId" type="textarea"
+            validation-message="message is a required field" placeholder="Message"></calcite-input> </calcite-label>
+
+
+    <calcite-button form="idForm" type="submit">Submit</calcite-button>
+
+</form>
+
